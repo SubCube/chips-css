@@ -1,0 +1,46 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #AAC4FF;
+}
+.main .card {
+  width: 300px;
+  height: 500px;
+  position: relative;
+  perspective: 500px;
+  cursor: pointer;
+  font-size: 25px;
+  color: white;
+}
+.main .card .front,
+.main .card .back {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 16px;
+}
+.main .card .front {
+  background-color: #4649FF;
+}
+.main .card .back {
+  box-shadow: 0 25px 40px 5px #5837D0;
+  background-color: #7978FF;
+  transform: rotateY(-180deg);
+}
+.main .card:hover .front {
+  transform: rotateY(-180deg);
+}
+.main .card:hover .back {
+  transform: rotateY(-360deg);
+}/*# sourceMappingURL=style.css.map */
