@@ -3,6 +3,6 @@ just css and html
 
 ## branches:
 - flip-card
-- neon light
+- neon light (star-icon)
 - logo
 - vscode
